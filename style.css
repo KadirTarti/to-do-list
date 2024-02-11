@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+  }
+  
+  body {
+    height: 100vh;
+    background-image: url(images/colorback3.jpg);
+    background-size: cover;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 60vw;
+    height: 80vh;
+    border-radius: 50px;
+    box-shadow: 2px 2px 20px rgba(34, 24, 24, 0.911);
+    background-image: url(images/paper2.avif);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    font-family: cursive;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: rgb(31, 90, 111);
+    text-align: center;
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+  
+  
+  /* input, button vs */
+  .todo-add {
+    width: 80%;
+    display: flex;
+    margin-top: 2rem;
+  }
+  #todo-input {
+    height: 3rem;
+    width: 80%;
+    margin-right: 10px;
+    border-color: #fff;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+  }
+  
+  #todo-button {
+    height: 3rem;
+    width: 25%;
+    background-color: #4f62ca;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  #todo-button:hover {
+    opacity: 0.9;
+    background-color: #1f2b70;
+    cursor: pointer;
+  }
+  
+  .todos {
+    width: 80%;
+    max-height: 60%;
+    margin-top: 2rem;
+    overflow: auto;
+    border-radius: 10px;
+  }
+  
+  .todos ul {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  
+  ul li {
+    color: rgb(41, 41, 41);
+    margin-bottom: 1rem;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+     background-color: #287caf;
+     color: white;
+    font-weight: bold;
+  }
+  
+  
+  
+  ul li:nth-child(even) {
+    background: #692f56;
+  }
+  
+  li i {
+    padding: 1rem;
+    color: #ea0a0a;
+    cursor: pointer; 
+  }
+  
+  li i:hover {
+    opacity: 0.3;
+  }
+  
+  
+  
+  
+  li p {
+    flex: 1;
+    /* diğer kardeşlerim cürmü kadar yer alsın, parentta geri kalan bütün yer benim olsun */
+  
+    font-size: 1.3rem;
+    padding: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  /* li .fa-check{
+    flex:1
+  } */
+  /* li checked class ı varsa p ye olacaklar altta yazıyor*/
+  li.checked > p {
+    color: rgb(41, 41, 41);
+    text-decoration: line-through;
+    font-weight: normal;
+  }
+  
+  /* li checked class ı varsa .fa-check e olacaklar altta yazıyor*/
+  li.checked > .fa-check {
+    color: #00e676;
+  }
