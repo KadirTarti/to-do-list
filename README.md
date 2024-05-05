@@ -45,7 +45,7 @@ Epic User Story: Developing a To-Do List using JS
 
 ## Objective 🔍
 
-Build a Weather App using axios
+Build a To-Do App using JS
 
 ### At the end of the project, we will be able to;
 
